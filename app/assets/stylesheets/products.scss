@@ -40,15 +40,28 @@ main section.categories-show {
         transition: all 0.3s;
       }
 
-      aside.price {
+      aside {
         position: absolute;
+        font-size: 0.8em;
+        padding: 10px;
+      }
+      
+      aside.price {
         top: 0;
         right: 0;
-        padding: 10px;
         background-color: #eee;
         border-top-right-radius: 4px;
         border-bottom-left-radius: 20px;
-        font-size: 0.8em;
+      }
+
+      aside.sold-out {
+        top: 0;
+        left: 0;
+        background-color: #ff6961;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
+        color: #fff;
+        font-weight: bold;
       }
 
       &:hover {
